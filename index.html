@@ -132,67 +132,46 @@
   <div class="produtos">
 
     <div class="card">
-      <img src="imagen/1000200648.png" />
-      <h3>Camisa palmeiras</h3>
-      <p class="price">R$ 129,90</p>
-      <button onclick="addCarrinho('Camisa palmeiras', 129.90)">Comprar</button>
-    </div>
+    <img src="palmeiras.jpg" alt="Camiseta do Palmeiras" />
+    <h3>Camiseta do Palmeiras</h3>
+    <p class="price">R$ 129,00</p>
+    
+    <a href="https://wa.me/5541988706428?text=Olá! Quero comprar a camisa do Palmeiras" target="_blank" style="text-decoration: none;">
+        <button style="cursor: pointer; background-color: #25D366; color: white; border: none; padding: 10px; border-radius: 5px; width: 100%;">
+            Comprar no WhatsApp
+        </button
+    </a>
+</div>
 
     <div class="card">
-      <img src="https://imagen/1000200932.png" />
-      <h3>Camisa flamengo</h3>
-      <p class="price">R$ 129,90</p>
-      <button onclick="addCarrinho('Camisa flamengo', 129.90)">Comprar</button>
-    </div>
+    <img src="imagen/1000200932.png" alt="Camisa flamengo" />
+    <h3>Camisa flamengo</h3>
+    <p class="price">R$ 129,90</p>
+    
+    <a href="https://wa.me/5541988706428?text=Olá! Quero comprar a camisa do Flamengo" target="_blank" style="text-decoration: none;">
+        <button style="cursor: pointer; background-color: #25D366; color: white; border: none; padding: 10px; border-radius: 5px; width: 100%;">
+            Comprar no WhatsApp
+        </button>
+    </a>
+</div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" />
-      <h3>Camisa Real Madrid</h3>
-      <p class="price">R$ 149,90</p>
-      <button onclick="addCarrinho('Camisa Real Madrid', 149.90)">Comprar</button>
-    </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" />
-      <h3>Camisa Barcelona</h3>
-      <p class="price">R$ 149,90</p>
-      <button onclick="addCarrinho('Camisa Barcelona', 149.90)">Comprar</button>
+      <img src="" alt="em breve" />
+      <h3>produto em breve</h3>
+      <p class="price">/p>
+      <button>aguarde</button>
     </div>
 
   </div>
 </div>
 
-<div class="carrinho">
-  <h3>🛒 Carrinho</h3>
-  <div id="itens"></div>
-  <div class="total" id="total">Total: R$ 0,00</div>
-</div>
+
 
 <footer>
-  © 2026 Loja de Camisas de Futebol - Todos os direitos reservados
-</footer>
+  
 
-<script>
-  let carrinho = [];
-  let total = 0;
 
-  function addCarrinho(nome, preco) {
-    carrinho.push({ nome, preco });
-    total += preco;
-    atualizar();
-  }
-
-  function atualizar() {
-    let lista = document.getElementById("itens");
-    lista.innerHTML = "";
-
-    carrinho.forEach(item => {
-      lista.innerHTML += `<div class="item">${item.nome} - R$ ${item.preco.toFixed(2)}</div>`;
-    });
-
-    document.getElementById("total").innerText =
-      "Total: R$ " + total.toFixed(2);
-  }
+  
 </script>
 
 </body>
